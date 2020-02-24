@@ -28,34 +28,29 @@ public class OrderDaoMock implements OrdersDao {
 
     @Override
     public Collection<OrderArrived> getPurchaseCandidates(SaleOrderSaved sale){
-        return buildCandidatesMockCollection(OrderType.PURCHASE);
+        return buildCandidatesMockCollection(OrderType.PURCHASE, sale.getAsset());
     }
 
     @Override
     public Collection<OrderArrived> getSaleCandidates(SaleOrderSaved sale){
-        return buildCandidatesMockCollection(OrderType.SALE);
+        return buildCandidatesMockCollection(OrderType.SALE, sale.getAsset());
     }
 
-    private Collection<OrderArrived> buildCandidatesMockCollection(OrderType orderType) {
+    private Collection<OrderArrived> buildCandidatesMockCollection(OrderType orderType, String asset) {
         Random random = new Random();
         List<OrderArrived> ordersArrived = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             ordersArrived.add(
-                buildOrderArrived(random,orderType)
+                buildOrderArrived(random,orderType, asset)
             );
         }
         return ordersArrived;
     }
 
-    private OrderArrived buildOrderArrived(Random random, OrderType sale){
+    private OrderArrived buildOrderArrived(Random random, OrderType sale, String asset){
         return new OrderArrived()
             .withOrderType(sale)
             .withAssetAmount(random.nextInt())
-            .withAsset(generateRandomString(random));
-    }
-
-    private String generateRandomString(Random random){
-        return random.ints(97, 123).limit(6)
-            .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
+            .withAsset(asset);
     }
 }
