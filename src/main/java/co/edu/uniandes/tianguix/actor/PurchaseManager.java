@@ -5,12 +5,7 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
-import co.edu.uniandes.tianguix.dao.OrdersDao;
-import co.edu.uniandes.tianguix.model.CandidatesRetrieved;
-import co.edu.uniandes.tianguix.model.OrderArrived;
-import co.edu.uniandes.tianguix.model.PurchaseOrderSaved;
-
-import java.util.Collection;
+import co.edu.uniandes.tianguix.model.*;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
@@ -32,11 +27,16 @@ public class PurchaseManager extends AbstractBehavior<PurchaseOrderSaved> {
 
 	private Behavior<PurchaseOrderSaved> onArrivedPurchaseOrder(PurchaseOrderSaved purchaseOrderSaved) {
 
-		OrdersDao ordersDao = new OrderDaoMock();
-		Collection<OrderArrived> candidates = ordersDao.getPurchaseCandidates(purchaseOrderSaved);
+		var ordersDao = new OrderDaoMock();
+		var candidates = ordersDao.getPurchaseCandidates(purchaseOrderSaved);
 
 		CandidatesRetrieved candidatesRetrieved =
-			new CandidatesRetrieved().withCandidates(candidates).withOrderSaved(purchaseOrderSaved);
+			new PurchaseCandidateRetrieved().withPurchaseCandidates(candidates)
+				.withSale(new OrderArrived()
+					.withOrderType(OrderType.PURCHASE)
+					.withAsset(purchaseOrderSaved.getAsset())
+					.withAssetAmount(purchaseOrderSaved.getAssetAmount())
+				);
 
 		purchaseOrderSaved.getReplayTo().tell(candidatesRetrieved);
 		return this;

@@ -3,6 +3,7 @@ package co.edu.uniandes.tianguix.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.With;
 
 import java.util.Collection;
 
@@ -15,6 +16,6 @@ import java.util.Collection;
 @AllArgsConstructor
 public class SaleCandidatesRetrieved implements CandidatesRetrieved{
 
-	private OrderArrived purchase;
-	private Collection<OrderArrived> saleCandidates;
+	@With private OrderArrived purchase;
+	@With private Collection<OrderArrived> saleCandidates;
 }
