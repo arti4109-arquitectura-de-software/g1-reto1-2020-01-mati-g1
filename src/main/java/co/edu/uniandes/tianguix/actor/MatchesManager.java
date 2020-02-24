@@ -42,15 +42,15 @@ public class MatchesManager extends AbstractBehavior<CandidatesRetrieved> {
 		if (candidatesRetrieved instanceof SaleCandidatesRetrieved) {
 			var candidates = (SaleCandidatesRetrieved) candidatesRetrieved;
 			var order = new Order()
-					.withType(OrderType.SALE.name())
+					.withType(candidates.getPurchase().getOrderType().name())
 					.withAmount(candidates.getPurchase().getAssetAmount())
 					.withAsset(candidates.getPurchase().getAsset());
 
-			candidates.getPurchase()
-					  .getReplyTo()
-					  .tell(new MatchedOrder(order, new ArrayList<>()));
+			candidates.getPurchase().getReplyTo().tell(new MatchedOrder(order, new ArrayList<>()));
 		} else {
-			((PurchaseCandidateRetrieved) candidatesRetrieved).getSale().getReplyTo().tell(new MatchedOrder());
+			var candidates = (PurchaseCandidateRetrieved) candidatesRetrieved;
+
+			candidates.getSale().getReplyTo().tell(new MatchedOrder());
 		}
 		return this;
 	}
