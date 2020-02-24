@@ -37,7 +37,6 @@ public class TianguixRoutes {
 	private Duration askTimeout;
 	private Scheduler scheduler;
 	private ActorRef<OrderArrived> orderManagerActor;
-	private Function<ActorRef<OrderSaved>, OrderArrived> messageFactory;
 
 	// -----------------------------------------------------------------------------------------------------------------
 	// Constructor
@@ -74,12 +73,15 @@ public class TianguixRoutes {
 
 	private CompletionStage<OrderSaved> saveOrder(Order order) {
 
-		messageFactory = ref -> new OrderArrived()
+		return AskPattern.ask(orderManagerActor, getMessageFactory(order), askTimeout, scheduler);
+	}
+
+	private Function<ActorRef<OrderSaved>, OrderArrived> getMessageFactory(Order order) {
+
+		return ref -> new OrderArrived()
 				.withAsset(order.getAsset())
 				.withAssetAmount(order.getAmount())
 				.withOrderType(OrderType.valueOf(order.getType()))
 				.withReplyTo(ref);
-
-		return AskPattern.ask(orderManagerActor, messageFactory, askTimeout, scheduler);
 	}
 }
