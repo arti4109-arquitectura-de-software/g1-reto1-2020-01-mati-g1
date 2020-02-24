@@ -5,11 +5,7 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
-import co.edu.uniandes.tianguix.model.CandidatesRetrieved;
-import co.edu.uniandes.tianguix.model.OrderArrived;
-import co.edu.uniandes.tianguix.model.SaleOrderSaved;
-
-import java.util.Collection;
+import co.edu.uniandes.tianguix.model.*;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
@@ -31,11 +27,15 @@ public class SalesManager extends AbstractBehavior<SaleOrderSaved> {
 
 	private Behavior<SaleOrderSaved> onArrivedSaveOrder(SaleOrderSaved saleOrderSaved) {
 
-		Collection<OrderArrived> candidates = new OrderDaoMock().getSaleCandidates(saleOrderSaved);
+		var candidates = new OrderDaoMock().getSaleCandidates(saleOrderSaved);
 
-		CandidatesRetrieved candidatesRetrieved = new CandidatesRetrieved()
-			.withCandidates(candidates)
-			.withOrderSaved(saleOrderSaved);
+		CandidatesRetrieved candidatesRetrieved = new SaleCandidatesRetrieved()
+			.withSaleCandidates(candidates)
+			.withPurchase(new OrderArrived()
+				.withOrderType(OrderType.SALE)
+				.withAsset(saleOrderSaved.getAsset())
+				.withAssetAmount(saleOrderSaved.getAssetAmount())
+			);
 
 		saleOrderSaved.getReplayTo().tell(candidatesRetrieved);
 
