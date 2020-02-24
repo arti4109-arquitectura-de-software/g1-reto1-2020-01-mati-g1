@@ -24,7 +24,7 @@ public class Application {
 		var materializer = Materializer.matFromSystem(system);
 		var http = Http.get(actorSystem);
 		var routeFlow = route.flow(actorSystem, materializer);
-		var host = ConnectHttp.toHost("localhost", 9090);
+		var host = ConnectHttp.toHost("0.0.0.0", 9090);
 		var futureBinding = http.bindAndHandle(routeFlow, host, materializer);
 
 		futureBinding.whenComplete(((binding, exception) -> {
