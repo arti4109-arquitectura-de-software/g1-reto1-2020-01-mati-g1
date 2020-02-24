@@ -17,5 +17,5 @@ import java.util.Collection;
 public class SaleCandidatesRetrieved implements CandidatesRetrieved{
 
 	@With private ArrivedOrder purchase;
-	@With private Collection<ArrivedOrder> saleCandidates;
+	@With private Collection<Order> saleCandidates;
 }
