@@ -1,5 +1,6 @@
 package co.edu.uniandes.tianguix.model;
 
+import akka.actor.typed.ActorRef;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,4 +17,5 @@ public class PurchaseOrderSaved implements OrderSaved {
 
 	@With private String asset;
 	@With private Integer assetAmount;
+	@With private ActorRef<CandidatesRetrieved> replayTo;
 }
