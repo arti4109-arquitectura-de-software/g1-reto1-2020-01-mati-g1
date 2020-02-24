@@ -3,6 +3,7 @@ package co.edu.uniandes.tianguix.actor;
 import akka.actor.typed.Behavior;
 import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
+import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
 import co.edu.uniandes.tianguix.model.*;
@@ -13,30 +14,34 @@ import co.edu.uniandes.tianguix.model.*;
  */
 public class PurchaseManager extends AbstractBehavior<PurchaseOrderSaved> {
 
-	public PurchaseManager(ActorContext<PurchaseOrderSaved> context) {
+	private PurchaseManager(ActorContext<PurchaseOrderSaved> context) {
 
 		super(context);
+	}
+
+	public static Behavior<PurchaseOrderSaved> create() {
+
+		return Behaviors.setup(PurchaseManager::new);
 	}
 
 	@Override public Receive<PurchaseOrderSaved> createReceive() {
 
 		return newReceiveBuilder()
-			.onMessage(PurchaseOrderSaved.class, this::onArrivedPurchaseOrder)
-			.build();
+				.onMessage(PurchaseOrderSaved.class, this::onArrivedPurchaseOrder)
+				.build();
 	}
 
 	private Behavior<PurchaseOrderSaved> onArrivedPurchaseOrder(PurchaseOrderSaved purchaseOrderSaved) {
 
 		var ordersDao = new OrderDaoMock();
 		var candidates = ordersDao.getPurchaseCandidates(purchaseOrderSaved);
-
-		CandidatesRetrieved candidatesRetrieved =
-			new PurchaseCandidateRetrieved().withPurchaseCandidates(candidates)
-				.withSale(new OrderArrived()
-					.withOrderType(OrderType.PURCHASE)
-					.withAsset(purchaseOrderSaved.getAsset())
-					.withAssetAmount(purchaseOrderSaved.getAssetAmount())
-				);
+		var candidatesRetrieved =
+				new PurchaseCandidateRetrieved()
+						.withPurchaseCandidates(candidates)
+						.withSale(new OrderArrived()
+										  .withOrderType(OrderType.PURCHASE)
+										  .withAsset(purchaseOrderSaved.getAsset())
+										  .withAssetAmount(purchaseOrderSaved.getAssetAmount()));
 
 		purchaseOrderSaved.getReplayTo().tell(candidatesRetrieved);
 		return this;

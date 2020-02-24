@@ -5,6 +5,7 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
+import co.edu.uniandes.tianguix.dao.OrderDaoMock;
 import co.edu.uniandes.tianguix.model.OrderArrived;
 import co.edu.uniandes.tianguix.model.OrderType;
 import co.edu.uniandes.tianguix.model.PurchaseOrderSaved;
@@ -34,21 +35,25 @@ public class OrdersManager extends AbstractBehavior<OrderArrived> {
 	}
 
 	private Behavior<OrderArrived> onArrivedOrder(OrderArrived orderArrived) {
-		// TODO: 23/02/20 save
 
-		// evaluate if the arrived order is a sale or a purchase
+		var dao = new OrderDaoMock();
+		dao.saveOrder(orderArrived);
 
-		var savedOrder = orderArrived.getOrderType().equals(OrderType.SALE) ?
-						 new SaleOrderSaved()
-								 .withAsset(orderArrived.getAsset())
-								 .withAssetAmount(orderArrived.getAssetAmount()) :
-						 new PurchaseOrderSaved()
-								 .withAsset(orderArrived.getAsset())
-								 .withAssetAmount(orderArrived.getAssetAmount());
+		if (orderArrived.getOrderType().equals(OrderType.SALE)) {
 
-		var replayTo = getContext().spawn(SalesManager.create(), "salesManager");
-		replayTo.tell(((SaleOrderSaved) savedOrder));
-		//orderArrived.getReplyTo().tell(savedOrder);
+			var replayTo = getContext().spawn(SalesManager.create(), "salesManager");
+			replayTo.tell(
+					new SaleOrderSaved()
+							.withAsset(orderArrived.getAsset())
+							.withAssetAmount(orderArrived.getAssetAmount()));
+		} else {
+			var replayTo = getContext().spawn(PurchaseManager.create(), "purchasesManager");
+			replayTo.tell(
+					new PurchaseOrderSaved()
+							.withAsset(orderArrived.getAsset())
+							.withAssetAmount(orderArrived.getAssetAmount()));
+		}
+
 		return this;
 	}
 }
