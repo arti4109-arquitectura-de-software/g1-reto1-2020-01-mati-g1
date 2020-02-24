@@ -14,8 +14,8 @@ public class OrderDaoMock implements OrdersDao {
     private final static Logger log = LoggerFactory.getLogger(OrderDaoMock.class);
 
     @Override
-    public void saveOrder(OrderArrived orderArrived){
-        log.info("order arrived saved {}", orderArrived.getAsset());
+    public void saveOrder(ArrivedOrder arrivedOrder){
+        log.info("order arrived saved {}", arrivedOrder.getAsset());
     }
 
     @Override
@@ -24,18 +24,18 @@ public class OrderDaoMock implements OrdersDao {
     }
 
     @Override
-    public Collection<OrderArrived> getPurchaseCandidates(PurchaseOrderSaved purchase){
-        return buildCandidatesMockCollection(OrderType.PURCHASE, purchase.getAsset());
+    public Collection<ArrivedOrder> getPurchaseCandidates(SavedPurchase purchase){
+        return buildCandidatesMockCollection(OrderType.PURCHASE, purchase.getArrivedOrder().getAsset());
     }
 
     @Override
-    public Collection<OrderArrived> getSaleCandidates(SaleOrderSaved sale){
-        return buildCandidatesMockCollection(OrderType.SALE, sale.getAsset());
+    public Collection<ArrivedOrder> getSaleCandidates(SavedSale sale){
+        return buildCandidatesMockCollection(OrderType.SALE, sale.getArrivedOrder().getAsset());
     }
 
-    private Collection<OrderArrived> buildCandidatesMockCollection(OrderType orderType, String asset) {
+    private Collection<ArrivedOrder> buildCandidatesMockCollection(OrderType orderType, String asset) {
         Random random = new Random();
-        List<OrderArrived> ordersArrived = new ArrayList<>();
+        List<ArrivedOrder> ordersArrived = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             ordersArrived.add(
                 buildOrderArrived(random,orderType, asset)
@@ -44,8 +44,8 @@ public class OrderDaoMock implements OrdersDao {
         return ordersArrived;
     }
 
-    private OrderArrived buildOrderArrived(Random random, OrderType sale, String asset){
-        return new OrderArrived()
+    private ArrivedOrder buildOrderArrived(Random random, OrderType sale, String asset){
+        return new ArrivedOrder()
             .withOrderType(sale)
             .withAssetAmount(random.nextInt())
             .withAsset(asset);

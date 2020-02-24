@@ -12,36 +12,33 @@ import co.edu.uniandes.tianguix.model.*;
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
  * @since 1.0.0
  */
-public class PurchaseManager extends AbstractBehavior<PurchaseOrderSaved> {
+public class PurchasesManager extends AbstractBehavior<SavedPurchase> {
 
-	private PurchaseManager(ActorContext<PurchaseOrderSaved> context) {
+	private PurchasesManager(ActorContext<SavedPurchase> context) {
 
 		super(context);
 	}
 
-	public static Behavior<PurchaseOrderSaved> create() {
+	public static Behavior<SavedPurchase> create() {
 
-		return Behaviors.setup(PurchaseManager::new);
+		return Behaviors.setup(PurchasesManager::new);
 	}
 
-	@Override public Receive<PurchaseOrderSaved> createReceive() {
+	@Override public Receive<SavedPurchase> createReceive() {
 
 		return newReceiveBuilder()
-				.onMessage(PurchaseOrderSaved.class, this::onArrivedPurchaseOrder)
+				.onMessage(SavedPurchase.class, this::onArrivedPurchaseOrder)
 				.build();
 	}
 
-	private Behavior<PurchaseOrderSaved> onArrivedPurchaseOrder(PurchaseOrderSaved purchaseOrderSaved) {
+	private Behavior<SavedPurchase> onArrivedPurchaseOrder(SavedPurchase savedPurchase) {
 
 		var ordersDao = new OrderDaoMock();
-		var candidates = ordersDao.getPurchaseCandidates(purchaseOrderSaved);
+		var candidates = ordersDao.getPurchaseCandidates(savedPurchase);
 		var candidatesRetrieved =
 				new PurchaseCandidateRetrieved()
 						.withPurchaseCandidates(candidates)
-						.withSale(new OrderArrived()
-										  .withOrderType(OrderType.PURCHASE)
-										  .withAsset(purchaseOrderSaved.getAsset())
-										  .withAssetAmount(purchaseOrderSaved.getAssetAmount()));
+						.withSale(savedPurchase.getArrivedOrder());
 
 		var replayTo = getContext().spawn(MatchesManager.create(), "matchesManager");
 		replayTo.tell(candidatesRetrieved);

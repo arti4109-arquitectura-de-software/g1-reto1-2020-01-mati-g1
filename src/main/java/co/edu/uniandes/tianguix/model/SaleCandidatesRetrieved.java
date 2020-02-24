@@ -16,6 +16,6 @@ import java.util.Collection;
 @AllArgsConstructor
 public class SaleCandidatesRetrieved implements CandidatesRetrieved{
 
-	@With private OrderArrived purchase;
-	@With private Collection<OrderArrived> saleCandidates;
+	@With private ArrivedOrder purchase;
+	@With private Collection<ArrivedOrder> saleCandidates;
 }

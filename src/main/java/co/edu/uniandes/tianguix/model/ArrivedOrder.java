@@ -13,9 +13,11 @@ import lombok.With;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SaleOrderSaved implements OrderSaved {
+public class ArrivedOrder {
 
+	@With private OrderType orderType;
 	@With private String asset;
 	@With private Integer assetAmount;
-	@With private ActorRef<CandidatesRetrieved> replayTo;
+	@With private ActorRef<MatchedOrder> replyTo;
+
 }

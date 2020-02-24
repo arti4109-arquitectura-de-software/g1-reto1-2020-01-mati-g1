@@ -1,9 +1,9 @@
 package co.edu.uniandes.tianguix.dao;
 
 import co.edu.uniandes.tianguix.model.Match;
-import co.edu.uniandes.tianguix.model.OrderArrived;
-import co.edu.uniandes.tianguix.model.PurchaseOrderSaved;
-import co.edu.uniandes.tianguix.model.SaleOrderSaved;
+import co.edu.uniandes.tianguix.model.ArrivedOrder;
+import co.edu.uniandes.tianguix.model.SavedPurchase;
+import co.edu.uniandes.tianguix.model.SavedSale;
 
 import java.util.Collection;
 
@@ -13,12 +13,12 @@ import java.util.Collection;
  */
 public interface OrdersDao {
 
-	void saveOrder(OrderArrived orderArrived);
+	void saveOrder(ArrivedOrder arrivedOrder);
 
 	void saveMatch(Match match);
 
-	Collection<OrderArrived> getPurchaseCandidates(PurchaseOrderSaved purchase);
+	Collection<ArrivedOrder> getPurchaseCandidates(SavedPurchase purchase);
 
-	Collection<OrderArrived> getSaleCandidates(SaleOrderSaved sale);
+	Collection<ArrivedOrder> getSaleCandidates(SavedSale sale);
 
 }

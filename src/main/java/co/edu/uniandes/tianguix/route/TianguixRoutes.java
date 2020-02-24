@@ -8,9 +8,9 @@ import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.model.StatusCodes;
 import akka.http.javadsl.server.Route;
 import akka.japi.function.Function;
+import co.edu.uniandes.tianguix.model.MatchedOrder;
 import co.edu.uniandes.tianguix.model.Order;
-import co.edu.uniandes.tianguix.model.OrderArrived;
-import co.edu.uniandes.tianguix.model.OrderSaved;
+import co.edu.uniandes.tianguix.model.ArrivedOrder;
 import co.edu.uniandes.tianguix.model.OrderType;
 import lombok.extern.slf4j.Slf4j;
 
@@ -36,13 +36,13 @@ public class TianguixRoutes {
 
 	private Duration askTimeout;
 	private Scheduler scheduler;
-	private ActorRef<OrderArrived> orderManagerActor;
+	private ActorRef<ArrivedOrder> orderManagerActor;
 
 	// -----------------------------------------------------------------------------------------------------------------
 	// Constructor
 	// -----------------------------------------------------------------------------------------------------------------
 
-	public TianguixRoutes(ActorSystem<?> system, ActorRef<OrderArrived> orderManagerActor) {
+	public TianguixRoutes(ActorSystem<?> system, ActorRef<ArrivedOrder> orderManagerActor) {
 
 		this.orderManagerActor = orderManagerActor;
 		this.scheduler = system.scheduler();
@@ -71,14 +71,14 @@ public class TianguixRoutes {
 	// Helper Methods
 	// -----------------------------------------------------------------------------------------------------------------
 
-	private CompletionStage<OrderSaved> saveOrder(Order order) {
+	private CompletionStage<MatchedOrder> saveOrder(Order order) {
 
 		return AskPattern.ask(orderManagerActor, getMessageFactory(order), askTimeout, scheduler);
 	}
 
-	private Function<ActorRef<OrderSaved>, OrderArrived> getMessageFactory(Order order) {
+	private Function<ActorRef<MatchedOrder>, ArrivedOrder> getMessageFactory(Order order) {
 
-		return ref -> new OrderArrived()
+		return ref -> new ArrivedOrder()
 				.withAsset(order.getAsset())
 				.withAssetAmount(order.getAmount())
 				.withOrderType(OrderType.valueOf(order.getType()))
