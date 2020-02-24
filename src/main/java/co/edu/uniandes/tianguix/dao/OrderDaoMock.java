@@ -1,9 +1,6 @@
 package co.edu.uniandes.tianguix.dao;
 
-import co.edu.uniandes.tianguix.model.Match;
-import co.edu.uniandes.tianguix.model.OrderArrived;
-import co.edu.uniandes.tianguix.model.OrderType;
-import co.edu.uniandes.tianguix.model.SaleOrderSaved;
+import co.edu.uniandes.tianguix.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,8 +24,8 @@ public class OrderDaoMock implements OrdersDao {
     }
 
     @Override
-    public Collection<OrderArrived> getPurchaseCandidates(SaleOrderSaved sale){
-        return buildCandidatesMockCollection(OrderType.PURCHASE, sale.getAsset());
+    public Collection<OrderArrived> getPurchaseCandidates(PurchaseOrderSaved purchase){
+        return buildCandidatesMockCollection(OrderType.PURCHASE, purchase.getAsset());
     }
 
     @Override
