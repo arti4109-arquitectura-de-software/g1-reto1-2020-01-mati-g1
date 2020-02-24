@@ -46,7 +46,9 @@ public class OrdersManager extends AbstractBehavior<OrderArrived> {
 								 .withAsset(orderArrived.getAsset())
 								 .withAssetAmount(orderArrived.getAssetAmount());
 
-		orderArrived.getReplyTo().tell(savedOrder);
+		var replayTo = getContext().spawn(SalesManager.create(), "salesManager");
+		replayTo.tell(((SaleOrderSaved) savedOrder));
+		//orderArrived.getReplyTo().tell(savedOrder);
 		return this;
 	}
 }

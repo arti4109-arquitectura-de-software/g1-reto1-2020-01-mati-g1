@@ -3,6 +3,7 @@ package co.edu.uniandes.tianguix.actor;
 import akka.actor.typed.Behavior;
 import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
+import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
 import co.edu.uniandes.tianguix.model.*;
@@ -13,31 +14,34 @@ import co.edu.uniandes.tianguix.model.*;
  */
 public class SalesManager extends AbstractBehavior<SaleOrderSaved> {
 
-	public SalesManager(ActorContext<SaleOrderSaved> context) {
+	private SalesManager(ActorContext<SaleOrderSaved> context) {
 
 		super(context);
+	}
+
+	public static Behavior<SaleOrderSaved> create() {
+
+		return Behaviors.setup(SalesManager::new);
 	}
 
 	@Override public Receive<SaleOrderSaved> createReceive() {
 
 		return newReceiveBuilder()
-			.onMessage(SaleOrderSaved.class, this::onArrivedSaveOrder)
-			.build();
+				.onMessage(SaleOrderSaved.class, this::onArrivedSaveOrder)
+				.build();
 	}
 
 	private Behavior<SaleOrderSaved> onArrivedSaveOrder(SaleOrderSaved saleOrderSaved) {
 
-		var candidates = new OrderDaoMock().getSaleCandidates(saleOrderSaved);
+		var candidates = new OrderDaoMock().getSaleCandidates(((SaleOrderSaved) saleOrderSaved));
 
-		CandidatesRetrieved candidatesRetrieved = new SaleCandidatesRetrieved()
-			.withSaleCandidates(candidates)
-			.withPurchase(new OrderArrived()
-				.withOrderType(OrderType.SALE)
-				.withAsset(saleOrderSaved.getAsset())
-				.withAssetAmount(saleOrderSaved.getAssetAmount())
-			);
-
-		saleOrderSaved.getReplayTo().tell(candidatesRetrieved);
+		var candidatesRetrieved = new SaleCandidatesRetrieved()
+				.withSaleCandidates(candidates)
+				.withPurchase(new OrderArrived()
+									  .withOrderType(OrderType.SALE)
+									  .withAsset(((SaleOrderSaved) saleOrderSaved).getAsset())
+									  .withAssetAmount(((SaleOrderSaved) saleOrderSaved).getAssetAmount())
+							 );
 
 		return this;
 	}
