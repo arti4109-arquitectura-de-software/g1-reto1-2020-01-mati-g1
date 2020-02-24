@@ -1,18 +1,23 @@
 package co.edu.uniandes.tianguix.model;
 
 import akka.actor.typed.ActorRef;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.With;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
  * @since 1.0.0
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderArrived {
 
-	private OrderType orderType;
-	private String asset;
-	private Integer assetAmount;
-	private ActorRef<OrderSaved> replyTo;
+	@With private OrderType orderType;
+	@With private String asset;
+	@With private Integer assetAmount;
+	@With private ActorRef<OrderSaved> replyTo;
 
 }
