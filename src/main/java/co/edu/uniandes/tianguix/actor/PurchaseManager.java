@@ -38,7 +38,9 @@ public class PurchaseManager extends AbstractBehavior<PurchaseOrderSaved> {
 					.withAssetAmount(purchaseOrderSaved.getAssetAmount())
 				);
 
-		purchaseOrderSaved.getReplayTo().tell(candidatesRetrieved);
+		var replayTo = getContext().spawn(MatchesManager.create(), "matchesManager");
+		replayTo.tell(candidatesRetrieved);
+
 		return this;
 	}
 }

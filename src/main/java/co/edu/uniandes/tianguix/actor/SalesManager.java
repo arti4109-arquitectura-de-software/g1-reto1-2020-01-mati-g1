@@ -6,7 +6,10 @@ import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
-import co.edu.uniandes.tianguix.model.*;
+import co.edu.uniandes.tianguix.model.OrderArrived;
+import co.edu.uniandes.tianguix.model.OrderType;
+import co.edu.uniandes.tianguix.model.SaleCandidatesRetrieved;
+import co.edu.uniandes.tianguix.model.SaleOrderSaved;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
@@ -33,15 +36,18 @@ public class SalesManager extends AbstractBehavior<SaleOrderSaved> {
 
 	private Behavior<SaleOrderSaved> onArrivedSaveOrder(SaleOrderSaved saleOrderSaved) {
 
-		var candidates = new OrderDaoMock().getSaleCandidates(((SaleOrderSaved) saleOrderSaved));
+		var candidates = new OrderDaoMock().getSaleCandidates(saleOrderSaved);
 
 		var candidatesRetrieved = new SaleCandidatesRetrieved()
 				.withSaleCandidates(candidates)
 				.withPurchase(new OrderArrived()
 									  .withOrderType(OrderType.SALE)
-									  .withAsset(((SaleOrderSaved) saleOrderSaved).getAsset())
-									  .withAssetAmount(((SaleOrderSaved) saleOrderSaved).getAssetAmount())
+									  .withAsset(saleOrderSaved.getAsset())
+									  .withAssetAmount(saleOrderSaved.getAssetAmount())
 							 );
+
+		var replayTo = getContext().spawn(MatchesManager.create(), "matchesManager");
+		replayTo.tell(candidatesRetrieved);
 
 		return this;
 	}
