@@ -43,7 +43,7 @@ public class SalesManager extends AbstractBehavior<SavedSale> {
 		var replayTo = getContext().spawn(MatchesManager.create(), "matchesManager");
 		replayTo.tell(candidatesRetrieved);
 
-		return this;
+		return Behaviors.stopped();
 	}
 
 }

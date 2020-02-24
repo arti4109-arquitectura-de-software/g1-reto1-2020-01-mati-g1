@@ -8,11 +8,8 @@ import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.model.CandidatesRetrieved;
 import co.edu.uniandes.tianguix.model.MatchedOrder;
 import co.edu.uniandes.tianguix.model.Order;
-import co.edu.uniandes.tianguix.model.OrderType;
 import co.edu.uniandes.tianguix.model.PurchaseCandidateRetrieved;
 import co.edu.uniandes.tianguix.model.SaleCandidatesRetrieved;
-
-import java.util.ArrayList;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
@@ -40,17 +37,23 @@ public class MatchesManager extends AbstractBehavior<CandidatesRetrieved> {
 	private Behavior<CandidatesRetrieved> onCandidatesRetrieved(CandidatesRetrieved candidatesRetrieved) {
 
 		if (candidatesRetrieved instanceof SaleCandidatesRetrieved) {
+
 			var candidates = (SaleCandidatesRetrieved) candidatesRetrieved;
 			var order = new Order()
 					.withType(candidates.getPurchase().getOrderType().name())
 					.withAmount(candidates.getPurchase().getAssetAmount())
 					.withAsset(candidates.getPurchase().getAsset());
 
-			candidates.getPurchase().getReplyTo().tell(new MatchedOrder(order, new ArrayList<>()));
+			candidates.getPurchase().getReplyTo().tell(new MatchedOrder(order, candidates.getSaleCandidates()));
 		} else {
-			var candidates = (PurchaseCandidateRetrieved) candidatesRetrieved;
 
-			candidates.getSale().getReplyTo().tell(new MatchedOrder());
+			var candidates = (PurchaseCandidateRetrieved) candidatesRetrieved;
+			var order = new Order()
+					.withType(candidates.getSale().getOrderType().name())
+					.withAmount(candidates.getSale().getAssetAmount())
+					.withAsset(candidates.getSale().getAsset());
+
+			candidates.getSale().getReplyTo().tell(new MatchedOrder(order, candidates.getPurchaseCandidates()));
 		}
 		return this;
 	}
