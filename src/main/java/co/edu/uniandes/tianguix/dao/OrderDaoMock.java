@@ -47,7 +47,7 @@ public class OrderDaoMock implements OrdersDao {
     private Order buildOrderArrived(Random random, OrderType sale, String asset){
         return new Order()
             .withType(sale.name())
-            .withAmount(random.nextInt())
+            .withAmount(random.nextInt(100000))
             .withAsset(asset);
     }
 }

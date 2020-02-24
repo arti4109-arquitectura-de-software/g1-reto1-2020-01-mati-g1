@@ -1,5 +1,6 @@
 package co.edu.uniandes.tianguix;
 
+import akka.actor.typed.ActorRef;
 import akka.actor.typed.ActorSystem;
 import akka.actor.typed.javadsl.Adapter;
 import akka.actor.typed.javadsl.Behaviors;
@@ -8,9 +9,11 @@ import akka.http.javadsl.Http;
 import akka.http.javadsl.server.Route;
 import akka.stream.Materializer;
 import co.edu.uniandes.tianguix.actor.OrdersManager;
+import co.edu.uniandes.tianguix.model.SavedSale;
 import co.edu.uniandes.tianguix.route.TianguixRoutes;
 
 import java.util.Objects;
+import java.util.Optional;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>
