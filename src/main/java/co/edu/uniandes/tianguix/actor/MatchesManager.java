@@ -5,11 +5,7 @@ import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
-import co.edu.uniandes.tianguix.model.CandidatesRetrieved;
-import co.edu.uniandes.tianguix.model.MatchedOrder;
-import co.edu.uniandes.tianguix.model.Order;
-import co.edu.uniandes.tianguix.model.PurchaseCandidateRetrieved;
-import co.edu.uniandes.tianguix.model.SaleCandidatesRetrieved;
+import co.edu.uniandes.tianguix.model.*;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>

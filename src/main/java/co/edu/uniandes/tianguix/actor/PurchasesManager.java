@@ -7,7 +7,9 @@ import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 import co.edu.uniandes.tianguix.dao.OrderDaoMock;
-import co.edu.uniandes.tianguix.model.*;
+import co.edu.uniandes.tianguix.model.CandidatesRetrieved;
+import co.edu.uniandes.tianguix.model.PurchaseCandidateRetrieved;
+import co.edu.uniandes.tianguix.model.SavedPurchase;
 
 import java.util.Optional;
 

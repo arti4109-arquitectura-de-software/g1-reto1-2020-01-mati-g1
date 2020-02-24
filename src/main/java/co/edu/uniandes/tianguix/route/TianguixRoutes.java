@@ -8,20 +8,16 @@ import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.model.StatusCodes;
 import akka.http.javadsl.server.Route;
 import akka.japi.function.Function;
+import co.edu.uniandes.tianguix.model.ArrivedOrder;
 import co.edu.uniandes.tianguix.model.MatchedOrder;
 import co.edu.uniandes.tianguix.model.Order;
-import co.edu.uniandes.tianguix.model.ArrivedOrder;
 import co.edu.uniandes.tianguix.model.OrderType;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
 
-import static akka.http.javadsl.server.Directives.complete;
-import static akka.http.javadsl.server.Directives.entity;
-import static akka.http.javadsl.server.Directives.onSuccess;
-import static akka.http.javadsl.server.Directives.path;
-import static akka.http.javadsl.server.Directives.post;
+import static akka.http.javadsl.server.Directives.*;
 
 /**
  * @author <a href="mailto:daniel.bellon@payulatam.com"> Daniel Bellón </a>

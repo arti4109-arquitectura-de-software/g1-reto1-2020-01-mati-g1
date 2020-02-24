@@ -1,6 +1,5 @@
 package co.edu.uniandes.tianguix.actor;
 
-import akka.actor.Props;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
 import akka.actor.typed.javadsl.AbstractBehavior;
