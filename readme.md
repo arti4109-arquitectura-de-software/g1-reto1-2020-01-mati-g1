@@ -63,7 +63,7 @@ Para ejecutar las pruebas se debe desplegar el contenedor principal de predator 
 
 Donde INTERNAL_ADDRESS es la IP interna de la máquina donde se despliega el contenedor principal de predator, PROJECT_HOME es la ubicación del proyecto.
 
-Para ingresar a la interfaz gráfica se debe seguir el siguiente link: http://loalhost/ui, en caso de tener desplegado predator en la máquina local. \ 
+Para ingresar a la interfaz gráfica se debe seguir el siguiente link: http://localhost/ui, en caso de tener desplegado predator en la máquina local. \ 
 
 
 **Para mayor información sobre la arquitectura diseñada, remitirse a la 
