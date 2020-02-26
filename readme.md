@@ -54,5 +54,17 @@ La evidencia de la ejecución del experimento se puede ver en el siguiente video
 - [Akka](http://https://akka.io/) para la implementación del modelo de actores
 - [Predator](https://github.com/Zooz/predator) para la ejecución de las pruebas de carga
 
+## Ejecución de pruebas de carga
+
+La herramienta seleccionada para la ejecución de las pruebas de carga fue Predator (https://www.predator.dev/). 
+Para ejecutar las pruebas se debe desplegar el contenedor principal de predator con el siguiente comando:
+
+ ```bash docker run -d -e SQLITE_STORAGE=db/predator -e JOB_PLATFORM=DOCKER -e INTERNAL_ADDRESS=http://$MACHINE_IP:80/v1 -p 80:80 --name predator -v /var/run/docker.sock:/var/run/docker.sock -v $PROJECT_HOME/pruebas_carga/predator:/usr/db zooz/predator```
+
+Donde INTERNAL_ADDRESS es la IP interna de la máquina donde se despliega el contenedor principal de predator, PROJECT_HOME es la ubicación del proyecto.
+
+Para ingresar a la interfaz gráfica se debe seguir el siguiente link: http://$IP/ui, donde IP pública de la máquina en la que se desplegó Predator. 
+
+
 **Para mayor información sobre la arquitectura diseñada, remitirse a la 
 [Wiki](https://github.com/arti4109-arquitectura-de-software/g1-reto1-2020-01-mati-g1/wiki) del experimento**
