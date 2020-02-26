@@ -29,5 +29,5 @@ asociada al rendimiento del Modelo de Actores en un entorno de alta concurrencia
 - [Akka](http://https://akka.io/) para la implementación del modelo de actores
 - [Predator](https://github.com/Zooz/predator) para la ejecución de las pruebas de carga
 
-Para mayor información sobre la arquitectura diseñada, remitirse a la 
-[Wiki](https://github.com/arti4109-arquitectura-de-software/g1-reto1-2020-01-mati-g1/wiki) del experimento
+**Para mayor información sobre la arquitectura diseñada, remitirse a la 
+[Wiki](https://github.com/arti4109-arquitectura-de-software/g1-reto1-2020-01-mati-g1/wiki) del experimento**
