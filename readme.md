@@ -59,8 +59,8 @@ La evidencia de la ejecución del experimento se puede ver en el siguiente video
 La herramienta seleccionada para la ejecución de las pruebas de carga fue [Predator](https://www.predator.dev/). 
 Para ejecutar las pruebas se debe desplegar el contenedor principal de predator con el siguiente comando:
 
- ``` bash
- bash docker run -d -e SQLITE_STORAGE=db/predator -e JOB_PLATFORM=DOCKER -e INTERNAL_ADDRESS=http://$MACHINE_IP:80/v1 -p 80:80 --name predator -v /var/run/docker.sock:/var/run/docker.sock -v $PROJECT_HOME/load_test/predator:/usr/db zooz/predator
+ ``` console
+ foo@bar:~$ docker run -d -e SQLITE_STORAGE=db/predator -e JOB_PLATFORM=DOCKER -e INTERNAL_ADDRESS=http://$MACHINE_IP:80/v1 -p 80:80 --name predator -v /var/run/docker.sock:/var/run/docker.sock -v $PROJECT_HOME/load_test/predator:/usr/db zooz/predator
 ```
 
 Donde `INTERNAL_ADDRESS` es la IP interna de la máquina donde se despliega el contenedor principal de predator, `PROJECT_HOME` es la ubicación del proyecto.
