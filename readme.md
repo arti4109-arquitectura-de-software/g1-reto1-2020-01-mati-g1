@@ -26,6 +26,17 @@ cuya composición interna se detalla en el siguiente diagrama de componentes:
 
 ![Diagrama no disponible](docs/Diagrama_de_componentes_(emparejador).svg "Diagrama de componentes")
 
+## Diseño del experimento
+
+Para facilitar las pruebas sobre el experimento, decidimos simplificar el Motor de Emparejamiento, exponiendo un API de emparejamiento,
+pues nuestras dudas asociadas al flujo de eventos proveniente de la cola de mensajería, no suponen una incertidumbre tan grande,
+y el exponer un API nos facilita las pruebas de carga, además decidimos no hacer una conección con base de datos, pues preferimos
+probar puntualmente el Modelo de Actores, con el fin de determinar si bajo un ambiente de estrés _akka_ seguirá procesando
+las ordenes con tiempos de respuesta de no máximo 100 ms, permitiendo pasar de 300.000 TPS a 500.000 TPS, el siguiente
+diagrama de componentes describe el diseño asociado al experimento
+
+![Diagrama no disponible](docs/Diagrama%20de%20componentes%20(emparejador-experimento).svg).svg "Diagrama de componentes")
+
 ## Resultados Esperados
 
 - Tiempos de procesamiento de máximo **100ms** en emparejamiento de órdenes de compra órdenes de venta
