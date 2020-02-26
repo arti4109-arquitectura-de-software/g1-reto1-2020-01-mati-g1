@@ -1,3 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1204px" height="624px" viewBox="-0.5 -0.5 1204 624" content="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1aSMH1df" style="background-color: rgb(255, 255, 255);"><defs><style type="text/css">ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom: 10px } &#xa;ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom: 10px } &#xa;ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom: 10px } &#xa;</style></defs><g><rect x="1" y="19" width="240" height="602" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><ellipse cx="93.5" cy="41" rx="10" ry="10" fill="black" stroke="#000000" pointer-events="none"/><ellipse cx="93.5" cy="41" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/><rect x="36" y="91" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="36" y="91" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="93" y="114.5">Guardar orden</text></g><path d="M 93.5 51 L 93.5 88.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 87.5 77.88 L 93.5 89.88 L 99.5 77.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="36" y="175" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="36" y="175" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="93" y="198.5">Clasificar orden</text></g><path d="M 93.5 131 L 93.5 172.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 87.5 161.88 L 93.5 173.88 L 99.5 161.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 93.5 262.5 L 100.5 275 L 93.5 287.5 L 86.5 275 Z" fill="#e6e6e6" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 93.5 262.5 L 100.5 275 L 93.5 287.5 L 86.5 275 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="93" y="308.5">es de compra o venta?</text></g><path d="M 36 195 L 28.5 195 Q 21 195 21 205 L 21 265 Q 21 275 31 275 L 84.76 275" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 73.88 281 L 85.88 275 L 73.88 269" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="241" y="1" width="220" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="350" y="13">Actor vendedor</text></g><rect x="1" y="1" width="240" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="120" y="13">Actor administrador de órdenes</text></g><rect x="241" y="19" width="220" height="602" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><rect x="296" y="225" width="110" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="350.5" y="243.5">: evento de venta</text></g><rect x="261" y="131" width="180" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="261" y="131" width="180" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="350.5" y="154.5">obtener candidatos de compra</text></g><path d="M 351 225 L 351 173.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 357 184.12 L 351 172.12 L 345 184.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="461" y="1" width="220" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="570" y="13">Actor comprador</text></g><rect x="461" y="19" width="220" height="602" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><rect x="511" y="311" width="120" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="570.5" y="329.5">: evento de compra</text></g><rect x="481" y="412" width="180" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="481" y="412" width="180" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="570.5" y="435.5">obtener canditatos de venta</text></g><path d="M 571 341 L 571 409.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 565 398.88 L 571 410.88 L 577 398.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 441 151 L 698.76 151" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 687.88 157 L 699.88 151 L 687.88 145" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="681" y="1" width="310" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="835" y="13">Actor emparejador</text></g><rect x="681" y="19" width="310" height="602" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><rect x="701" y="136" width="220" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="810.5" y="154.5">: evento de candidatos de compra</text></g><rect x="713" y="422" width="195" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="810" y="440.5">: evento de candidatos de venta</text></g><rect x="758" y="266" width="105" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="758" y="266" width="105" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="810" y="289.5">emparejar</text></g><path d="M 811 422 L 811 374 Q 811 364 811 354 L 811 308.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 817 319.12 L 811 307.12 L 805 319.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 811 166 L 811 206 Q 811 216 811 226 L 811 263.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 805 252.88 L 811 264.88 L 817 252.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 921 273.5 L 928 286 L 921 298.5 L 914 286 Z" fill="#e6e6e6" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 921 273.5 L 928 286 L 921 298.5 L 914 286 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="920.5" y="319.5">emparejamiento exitoso?</text></g><path d="M 863 286 L 911.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 900.88 292 L 912.88 286 L 900.88 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 921 273.5 L 921 227.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 927 238.12 L 921 226.12 L 915 238.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(904.5,239.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="13" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">no</div></div></foreignObject><svg width="13" height="12" style="width: 13px; height: 12px;"><defs><path id="oaKx_g6CACwc8QAk" d="M0,12.6 h13.359375"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#oaKx_g6CACwc8QAk" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">no</tspan></textPath></text></svg></switch></g><ellipse cx="921" cy="215" rx="6.666666666666667" ry="6.666666666666667" fill="black" stroke="#000000" pointer-events="none"/><ellipse cx="921" cy="215" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/><rect x="991" y="1" width="210" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="1095" y="13">Actor notificador</text></g><rect x="991" y="19" width="210" height="602" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/><rect x="1018" y="266" width="152" height="40" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="1093.5" y="282.5">: evento de notificación </text><text x="1093.5" y="296.5">de emparejamiento</text></g><rect x="1036.5" y="352" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="1036.5" y="352" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="1093.5" y="375.5">construir notificación</text></g><path d="M 1094 306 L 1094 349.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 338.88 L 1094 350.88 L 1100 338.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="1036.5" y="442" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000" pointer-events="none"/><rect x="1036.5" y="442" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/><g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px"><text x="1093.5" y="465.5">enviar notificación</text></g><path d="M 1094 392 L 1094 439.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 428.88 L 1094 440.88 L 1100 428.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="1094" cy="542" rx="6.666666666666667" ry="6.666666666666667" fill="black" stroke="#000000" pointer-events="none"/><ellipse cx="1094" cy="542" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/><path d="M 1094 482 L 1094 529.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 518.88 L 1094 530.88 L 1100 518.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 94 287.5 L 94 316 Q 94 326 104 326 L 508.76 326" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 497.88 332 L 509.88 326 L 497.88 320" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(171.5,335.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="56" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">es compra</div></div></foreignObject><svg width="56" height="12" style="width: 56px; height: 12px;"><defs><path id="saKx_g6CACwc8QAl" d="M0,12.6 h56.03125"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#saKx_g6CACwc8QAl" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">es compra</tspan></textPath></text></svg></switch></g><path d="M 94 262.5 L 94 250 Q 94 240 104 240 L 293.76 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 282.88 246 L 294.88 240 L 282.88 234" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(188.5,219.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="45" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">es venta</div></div></foreignObject><svg width="45" height="12" style="width: 45px; height: 12px;"><defs><path id="iaKx_g6CACwc8QAm" d="M0,12.6 h45.375"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#iaKx_g6CACwc8QAm" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">es venta</tspan></textPath></text></svg></switch></g><path d="M 661 432 L 681 432 Q 691 432 700.88 432 L 710.76 432" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 699.88 438 L 711.88 432 L 699.88 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 928 286 L 1015.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1004.88 292 L 1016.88 286 L 1004.88 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(965.5,265.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="9" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">si</div></div></foreignObject><svg width="9" height="12" style="width: 9px; height: 12px;"><defs><path id="KaKx_g6CACwc8QAn" d="M0,12.6 h8.671875"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#KaKx_g6CACwc8QAn" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">si</tspan></textPath></text></svg></switch></g><path d="M 93.5 51 L 93.5 88.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 87.5 77.88 L 93.5 89.88 L 99.5 77.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 93.5 131 L 93.5 172.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 87.5 161.88 L 93.5 173.88 L 99.5 161.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 36 195 L 28.5 195 Q 21 195 21 205 L 21 265 Q 21 275 31 275 L 84.76 275" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 73.88 281 L 85.88 275 L 73.88 269" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 351 225 L 351 173.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 357 184.12 L 351 172.12 L 345 184.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 571 341 L 571 409.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 565 398.88 L 571 410.88 L 577 398.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 441 151 L 698.76 151" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 687.88 157 L 699.88 151 L 687.88 145" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 811 422 L 811 374 Q 811 364 811 354 L 811 308.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 817 319.12 L 811 307.12 L 805 319.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 811 166 L 811 206 Q 811 216 811 226 L 811 263.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 805 252.88 L 811 264.88 L 817 252.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 863 286 L 911.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 900.88 292 L 912.88 286 L 900.88 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 921 273.5 L 921 227.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 927 238.12 L 921 226.12 L 915 238.12" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(904.5,239.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="13" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">no</div></div></foreignObject><svg width="13" height="12" style="width: 13px; height: 12px;"><defs><path id="WaKx_g6CACwc8QAo" d="M0,12.6 h13.359375"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#WaKx_g6CACwc8QAo" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">no</tspan></textPath></text></svg></switch></g><path d="M 1094 306 L 1094 349.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 338.88 L 1094 350.88 L 1100 338.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1094 392 L 1094 439.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 428.88 L 1094 440.88 L 1100 428.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1094 482 L 1094 529.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1088 518.88 L 1094 530.88 L 1100 518.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 94 287.5 L 94 316 Q 94 326 104 326 L 508.76 326" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 497.88 332 L 509.88 326 L 497.88 320" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(171.5,335.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="56" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">es compra</div></div></foreignObject><svg width="56" height="12" style="width: 56px; height: 12px;"><defs><path id="eaKx_g6CACwc8QAp" d="M0,12.6 h56.03125"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#eaKx_g6CACwc8QAp" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">es compra</tspan></textPath></text></svg></switch></g><path d="M 94 262.5 L 94 250 Q 94 240 104 240 L 293.76 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 282.88 246 L 294.88 240 L 282.88 234" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(188.5,219.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="45" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">es venta</div></div></foreignObject><svg width="45" height="12" style="width: 45px; height: 12px;"><defs><path id="haKx_g6CACwc8QAq" d="M0,12.6 h45.375"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#haKx_g6CACwc8QAq" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">es venta</tspan></textPath></text></svg></switch></g><path d="M 661 432 L 681 432 Q 691 432 700.88 432 L 710.76 432" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 699.88 438 L 711.88 432 L 699.88 426" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 928 286 L 1015.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 1004.88 292 L 1016.88 286 L 1004.88 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(965.5,265.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="9" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">si</div></div></foreignObject><svg width="9" height="12" style="width: 9px; height: 12px;"><defs><path id="paKx_g6CACwc8QAr" d="M0,12.6 h8.671875"/></defs><text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400"><textPath xlink:href="#paKx_g6CACwc8QAr" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">si</tspan></textPath></text></svg></switch></g></g><g fill="#787878" font-family="Arial,Helvetica" font-size="12px"><text x="6" y="15">Visual Paradigm Online Diagrams Express Edition</text></g><g fill="#787878" font-family="Arial,Helvetica" text-anchor="end" font-size="12px"><text x="1198" y="617">Visual Paradigm Online Diagrams Express Edition</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1204px"
+     height="624px" viewBox="-0.5 -0.5 1204 624"
+     content="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1aSMH1df"
+     style="background-color: rgb(255, 255, 255);">
+    <defs>
+        <style type="text/css">ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom:
+            10px } &#xa;ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom: 10px }
+            &#xa;ul { margin-top: 0px; margin-bottom: 10px } &#xa;ol { margin-top: 0px; margin-bottom: 10px } &#xa;
+        </style>
+    </defs>
+    <g>
+        <rect x="1" y="19" width="240" height="602" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <ellipse cx="93.5" cy="41" rx="10" ry="10" fill="black" stroke="#000000" pointer-events="none"/>
+        <ellipse cx="93.5" cy="41" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/>
+        <rect x="36" y="91" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="36" y="91" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="93" y="114.5">Guardar orden</text>
+        </g>
+        <path d="M 93.5 51 L 93.5 88.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 87.5 77.88 L 93.5 89.88 L 99.5 77.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <rect x="36" y="175" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="36" y="175" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="93" y="198.5">Clasificar orden</text>
+        </g>
+        <path d="M 93.5 131 L 93.5 172.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 87.5 161.88 L 93.5 173.88 L 99.5 161.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 93.5 262.5 L 100.5 275 L 93.5 287.5 L 86.5 275 Z" fill="#e6e6e6" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 93.5 262.5 L 100.5 275 L 93.5 287.5 L 86.5 275 Z" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="93" y="308.5">es de compra o venta?</text>
+        </g>
+        <path d="M 36 195 L 28.5 195 Q 21 195 21 205 L 21 265 Q 21 275 31 275 L 84.76 275" fill="none" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 73.88 281 L 85.88 275 L 73.88 269" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <rect x="241" y="1" width="220" height="18" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="350" y="13">Actor vendedor</text>
+        </g>
+        <rect x="1" y="1" width="240" height="18" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="120" y="13">Actor administrador de órdenes</text>
+        </g>
+        <rect x="241" y="19" width="220" height="602" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <rect x="296" y="225" width="110" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="350.5" y="243.5">: evento de venta</text>
+        </g>
+        <rect x="261" y="131" width="180" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="261" y="131" width="180" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="350.5" y="154.5">obtener candidatos de compra</text>
+        </g>
+        <path d="M 351 225 L 351 173.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 357 184.12 L 351 172.12 L 345 184.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <rect x="461" y="1" width="220" height="18" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="570" y="13">Actor comprador</text>
+        </g>
+        <rect x="461" y="19" width="220" height="602" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <rect x="511" y="311" width="120" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="570.5" y="329.5">: evento de compra</text>
+        </g>
+        <rect x="481" y="412" width="180" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="481" y="412" width="180" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="570.5" y="435.5">obtener canditatos de venta</text>
+        </g>
+        <path d="M 571 341 L 571 409.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 565 398.88 L 571 410.88 L 577 398.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 441 151 L 698.76 151" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 687.88 157 L 699.88 151 L 687.88 145" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <rect x="681" y="1" width="310" height="18" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="835" y="13">Actor emparejador</text>
+        </g>
+        <rect x="681" y="19" width="310" height="602" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <rect x="701" y="136" width="220" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="810.5" y="154.5">: evento de candidatos de compra</text>
+        </g>
+        <rect x="713" y="422" width="195" height="30" fill="#e6e6e6" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="810" y="440.5">: evento de candidatos de venta</text>
+        </g>
+        <rect x="758" y="266" width="105" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="758" y="266" width="105" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="810" y="289.5">emparejar</text>
+        </g>
+        <path d="M 811 422 L 811 374 Q 811 364 811 354 L 811 308.24" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 817 319.12 L 811 307.12 L 805 319.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 811 166 L 811 206 Q 811 216 811 226 L 811 263.76" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 805 252.88 L 811 264.88 L 817 252.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 921 273.5 L 928 286 L 921 298.5 L 914 286 Z" fill="#e6e6e6" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 921 273.5 L 928 286 L 921 298.5 L 914 286 Z" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="920.5" y="319.5">emparejamiento exitoso?</text>
+        </g>
+        <path d="M 863 286 L 911.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 900.88 292 L 912.88 286 L 900.88 280" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 921 273.5 L 921 227.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 927 238.12 L 921 226.12 L 915 238.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(904.5,239.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="13" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">no
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="13" height="12" style="width: 13px; height: 12px;">
+                    <defs>
+                        <path id="oaKx_g6CACwc8QAk" d="M0,12.6 h13.359375"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#oaKx_g6CACwc8QAk" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">no</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <ellipse cx="921" cy="215" rx="6.666666666666667" ry="6.666666666666667" fill="black" stroke="#000000"
+                 pointer-events="none"/>
+        <ellipse cx="921" cy="215" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/>
+        <rect x="991" y="1" width="210" height="18" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="1095" y="13">Actor notificador</text>
+        </g>
+        <rect x="991" y="19" width="210" height="602" fill="none" stroke="#000000" stroke-width="2"
+              pointer-events="none"/>
+        <rect x="1018" y="266" width="152" height="40" fill="#e6e6e6" stroke="#000000" pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="1093.5" y="282.5">: evento de notificación</text>
+            <text x="1093.5" y="296.5">de emparejamiento</text>
+        </g>
+        <rect x="1036.5" y="352" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="1036.5" y="352" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="1093.5" y="375.5">construir notificación</text>
+        </g>
+        <path d="M 1094 306 L 1094 349.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 338.88 L 1094 350.88 L 1100 338.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <rect x="1036.5" y="442" width="115" height="40" rx="15" ry="15" fill="#e6e6e6" stroke="#000000"
+              pointer-events="none"/>
+        <rect x="1036.5" y="442" width="115" height="40" rx="15" ry="15" fill="none" stroke="#000000"
+              pointer-events="none"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="1093.5" y="465.5">enviar notificación</text>
+        </g>
+        <path d="M 1094 392 L 1094 439.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 428.88 L 1094 440.88 L 1100 428.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <ellipse cx="1094" cy="542" rx="6.666666666666667" ry="6.666666666666667" fill="black" stroke="#000000"
+                 pointer-events="none"/>
+        <ellipse cx="1094" cy="542" rx="10" ry="10" fill="none" stroke="#000000" pointer-events="none"/>
+        <path d="M 1094 482 L 1094 529.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 518.88 L 1094 530.88 L 1100 518.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 94 287.5 L 94 316 Q 94 326 104 326 L 508.76 326" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 497.88 332 L 509.88 326 L 497.88 320" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(171.5,335.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">es compra
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="56" height="12" style="width: 56px; height: 12px;">
+                    <defs>
+                        <path id="saKx_g6CACwc8QAl" d="M0,12.6 h56.03125"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#saKx_g6CACwc8QAl" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">es compra</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 94 262.5 L 94 250 Q 94 240 104 240 L 293.76 240" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 282.88 246 L 294.88 240 L 282.88 234" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(188.5,219.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="45" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">es venta
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="45" height="12" style="width: 45px; height: 12px;">
+                    <defs>
+                        <path id="iaKx_g6CACwc8QAm" d="M0,12.6 h45.375"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#iaKx_g6CACwc8QAm" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">es venta</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 661 432 L 681 432 Q 691 432 700.88 432 L 710.76 432" fill="none" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 699.88 438 L 711.88 432 L 699.88 426" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 928 286 L 1015.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1004.88 292 L 1016.88 286 L 1004.88 280" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(965.5,265.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="9" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">si
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="9" height="12" style="width: 9px; height: 12px;">
+                    <defs>
+                        <path id="KaKx_g6CACwc8QAn" d="M0,12.6 h8.671875"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#KaKx_g6CACwc8QAn" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">si</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 93.5 51 L 93.5 88.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 87.5 77.88 L 93.5 89.88 L 99.5 77.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 93.5 131 L 93.5 172.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 87.5 161.88 L 93.5 173.88 L 99.5 161.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 36 195 L 28.5 195 Q 21 195 21 205 L 21 265 Q 21 275 31 275 L 84.76 275" fill="none" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 73.88 281 L 85.88 275 L 73.88 269" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 351 225 L 351 173.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 357 184.12 L 351 172.12 L 345 184.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 571 341 L 571 409.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 565 398.88 L 571 410.88 L 577 398.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 441 151 L 698.76 151" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 687.88 157 L 699.88 151 L 687.88 145" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 811 422 L 811 374 Q 811 364 811 354 L 811 308.24" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 817 319.12 L 811 307.12 L 805 319.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 811 166 L 811 206 Q 811 216 811 226 L 811 263.76" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 805 252.88 L 811 264.88 L 817 252.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 863 286 L 911.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 900.88 292 L 912.88 286 L 900.88 280" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 921 273.5 L 921 227.24" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 927 238.12 L 921 226.12 L 915 238.12" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(904.5,239.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="13" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">no
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="13" height="12" style="width: 13px; height: 12px;">
+                    <defs>
+                        <path id="WaKx_g6CACwc8QAo" d="M0,12.6 h13.359375"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#WaKx_g6CACwc8QAo" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">no</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 1094 306 L 1094 349.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 338.88 L 1094 350.88 L 1100 338.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 1094 392 L 1094 439.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 428.88 L 1094 440.88 L 1100 428.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 1094 482 L 1094 529.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1088 518.88 L 1094 530.88 L 1100 518.88" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 94 287.5 L 94 316 Q 94 326 104 326 L 508.76 326" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 497.88 332 L 509.88 326 L 497.88 320" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(171.5,335.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">es compra
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="56" height="12" style="width: 56px; height: 12px;">
+                    <defs>
+                        <path id="eaKx_g6CACwc8QAp" d="M0,12.6 h56.03125"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#eaKx_g6CACwc8QAp" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">es compra</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 94 262.5 L 94 250 Q 94 240 104 240 L 293.76 240" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 282.88 246 L 294.88 240 L 282.88 234" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(188.5,219.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="45" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">es venta
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="45" height="12" style="width: 45px; height: 12px;">
+                    <defs>
+                        <path id="haKx_g6CACwc8QAq" d="M0,12.6 h45.375"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#haKx_g6CACwc8QAq" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">es venta</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+        <path d="M 661 432 L 681 432 Q 691 432 700.88 432 L 710.76 432" fill="none" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 699.88 438 L 711.88 432 L 699.88 426" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <path d="M 928 286 L 1015.76 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1004.88 292 L 1016.88 286 L 1004.88 280" fill="none" stroke="#000000" stroke-miterlimit="10"
+              pointer-events="none"/>
+        <g transform="translate(965.5,265.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="9" height="12"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;">si
+                        </div>
+                    </div>
+                </foreignObject>
+                <svg width="9" height="12" style="width: 9px; height: 12px;">
+                    <defs>
+                        <path id="paKx_g6CACwc8QAr" d="M0,12.6 h8.671875"/>
+                    </defs>
+                    <text fill="rgb(0, 0, 0)" font-size="12px" font-family="Helvetica" font-weight="400">
+                        <textPath xlink:href="#paKx_g6CACwc8QAr" startOffset="50%" text-anchor="middle">
+                            <tspan xml:space="preserve">si</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </switch>
+        </g>
+    </g>
+    <g fill="#787878" font-family="Arial,Helvetica" font-size="12px">
+    </g>
+    <g fill="#787878" font-family="Arial,Helvetica" text-anchor="end" font-size="12px">
+    </g>
+</svg>
