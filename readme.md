@@ -35,7 +35,7 @@ probar puntualmente el Modelo de Actores, con el fin de determinar si bajo un am
 las ordenes con tiempos de respuesta de no máximo 100 ms, permitiendo pasar de 300.000 TPS a 500.000 TPS, el siguiente
 diagrama de componentes describe el diseño asociado al experimento
 
-![Diagrama no disponible](docs/Diagrama%20de%20componentes%20(emparejador-experimento).svg).svg "Diagrama de componentes")
+![Diagrama no disponible](docs/Diagrama_de_componentes(emparejador-experimento).svg).svg "Diagrama de componentes")
 
 ## Resultados Esperados
 
