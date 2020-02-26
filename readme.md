@@ -42,6 +42,12 @@ diagrama de componentes describe el diseño asociado al experimento:
 - Tiempos de procesamiento de máximo **100ms** en emparejamiento de órdenes de compra órdenes de venta
 - Rendimiento mayor a 300 TPS 
 
+## Evidencia del experimento realizado
+
+La evidencia de la ejecución del experimento se puede ver en el siguiente video:
+
+[![IMAGE ALT TEXT HERE](docs/video.png)](https://youtu.be/rFCCOnK-FDY)
+
 ## Tecnologías y frameworks utilizados
 
 - Java 12 como lenguaje de programación
