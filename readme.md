@@ -16,7 +16,15 @@ de dar contexto sobre las motivaciones que nos llevaron a tomar las decisiones d
 El estilo de arquitectura predominante que dirigió nuestro diseño es de tipo **Publicador-Subscritor**, sin embargo,
 para poder satisfacer el ASR descrito anteriormente, decidimos aplicar **Event Sourcing** en nuestro **Motor de Emparejamiento**,
 utilizando específicamente el **Modelo de Actores**. Nuestro experimento pretende disipar las dudas y reducir la incertidumbre
-asociada al rendimiento del Modelo de Actores en un entorno de alta concurrencia.
+asociada al rendimiento del Modelo de Actores en un entorno de alta concurrencia, y de esa manera determinar 
+si las decisiones tomadas nos ayudarán a favorecer la escalabilidad asociada al ASR seleccionado.
+
+## Componente a probar
+
+Como se mencionó en el apartado inmediatamente anterior, el experimento gira en torno al **Motor de Emparejamiento**,
+cuya composición interna se detalla en el siguiente diagrama de componentes:
+
+![Diagrama no disponible](docs/Diagrama_de_componentes_(emparejador).svg "Diagrama de componentes")
 
 ## Resultados Esperados
 
