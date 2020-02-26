@@ -9,7 +9,7 @@ a la escalabilidad y latencia de **Tianguix**.
 A continuación se detalla el ASR que se pretende satisfacer con la arquitectura que se diseñó, con motivo
 de dar contexto sobre las motivaciones que nos llevaron a tomar las decisiones de diseño.
 
-![ASR no disponible](docs/asr.png "ASR")
+![ASR no disponible](docs/ASR.png "ASR")
 
 ## Descripción del experimento
 
